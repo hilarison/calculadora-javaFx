@@ -24,7 +24,13 @@ public class PrincipalController implements Initializable {
     private TextField txtNumero1,txtNumero2, txtResultado;
     
     @FXML
-    private Button btnSoma; 
+    private Button btnmutiplicaçao; 
+    @FXML
+    private Button btnsoma;
+    @FXML
+    private Button btnsubtraçao;
+    @FXML
+    private Button btndivisao;
     
       
     @FXML
@@ -39,6 +45,40 @@ public class PrincipalController implements Initializable {
          
       txtResultado.setText(result.toString());
     }
+    @FXML
+        private void subtraçao(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+         
+         Double result;
+         
+        result= num1 - num2;
+        txtResultado.setText(result.toString());
+        }
+        
+    @FXML
+        private void divisao(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+         
+         Double result;
+         
+        result= num1 / num2;
+        txtResultado.setText(result.toString());
+        }
+   
+    @FXML
+        private void mutiplicaçao(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+         
+         Double result;
+         
+        result= num1 * num2;
+        txtResultado.setText(result.toString());
+        }
+        
+        
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
