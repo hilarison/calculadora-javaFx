@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.PrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.PrincipalController">
    <children>
+      <ImageView fitHeight="307.0" fitWidth="384.0" layoutX="-3.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/Apresentação1.png" />
+         </image>
+      </ImageView>
       <TextField fx:id="txtNumero1" layoutX="14.0" layoutY="45.0" prefHeight="26.0" prefWidth="205.0" />
       <TextField fx:id="txtNumero2" layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="205.0" />
-      <TextField fx:id="txtResultado" layoutX="15.0" layoutY="172.0" onAction="#somar" />
-      <Label layoutX="14.0" layoutY="21.0" prefHeight="17.0" prefWidth="84.0" text="Numero1" />
-      <Label layoutX="14.0" layoutY="79.0" text="Numero2" />
-      <Label layoutX="14.0" layoutY="151.0" text="Resultado" />
-      <Button fx:id="btnmutiplicaçao" layoutX="290.0" layoutY="137.0" mnemonicParsing="false" onAction="#mutiplicaçao" text="Mutiplicaçao" />
-      <Button fx:id="btnsoma" layoutX="232.0" layoutY="175.0" mnemonicParsing="false" onAction="#somar" prefHeight="25.0" prefWidth="51.0" text="Soma" />
-      <Button fx:id="btnsubtraçao" layoutX="291.0" layoutY="175.0" mnemonicParsing="false" onAction="#subtraçao" prefHeight="25.0" prefWidth="84.0" text="Subtraçao" />
-      <Button fx:id="btndivisao" layoutX="231.0" layoutY="137.0" mnemonicParsing="false" onAction="#divisao" text="Divisao" />
+      <TextField fx:id="txtResultado" layoutX="15.0" layoutY="161.0" onAction="#somar" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="14.0" layoutY="21.0" prefHeight="17.0" prefWidth="84.0" text="Numero1:" textFill="#f8f8f8" />
+      <Label layoutX="14.0" layoutY="79.0" text="Numero2:" textFill="#f8f8f8" />
+      <Label layoutX="14.0" layoutY="140.0" text="Resultado:" textFill="#f8f8f8" />
+      <Button fx:id="btnmutiplicaçao" layoutX="77.0" layoutY="205.0" mnemonicParsing="false" onAction="#mutiplicaçao" text="Mutiplicaçao" />
+      <Button fx:id="btnsoma" layoutX="19.0" layoutY="243.0" mnemonicParsing="false" onAction="#somar" prefHeight="25.0" prefWidth="51.0" text="Soma" />
+      <Button fx:id="btnsubtraçao" layoutX="78.0" layoutY="243.0" mnemonicParsing="false" onAction="#subtraçao" prefHeight="25.0" prefWidth="84.0" text="Subtraçao" />
+      <Button fx:id="btndivisao" layoutX="18.0" layoutY="205.0" mnemonicParsing="false" onAction="#divisao" text="Divisao" />
    </children>
 </AnchorPane>
